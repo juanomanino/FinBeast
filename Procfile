@@ -1,1 +1,2 @@
-web:gunicorn index:app
+ECHO est� activado.
+web: gunicorn index

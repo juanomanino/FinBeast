@@ -10,6 +10,10 @@ def home():
 def news():
     return render_template('news.html')
 
+@app.route("/info")
+def info():
+    return render_template('info.html')
+
 @app.route("/about")
 def about():
     return render_template('about.html')

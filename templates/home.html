@@ -1,21 +1,66 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block content%}
-<div id="fondoimagen1">
-  <div class="container center-h center-v" 
-  <p style="color:#ffffff" ; <h1>Descubre el dolor de las especies</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinBeast</title>
+    <!--BOOTSTRAP 4-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
 
-   <font face="Comic Sans MS,Arial,Verdana">
-      <p>
-       <font size="7">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+        <a class="navbar-brand" href="/">FinBeast <span></span></a>
+        <form action="#" class="searchform order-sm-start order-lg-last">
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+        <li class="nav-item active"><a href="/" class="nav-link">Inicio</a></li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+        <div class="dropdown-menu" aria-labelledby="dropdown04">
+        <a class="dropdown-item" href="#">Page 1</a>
+        <a class="dropdown-item" href="#">Page 2</a>
+        <a class="dropdown-item" href="#">Page 3</a>
+        <a class="dropdown-item" href="#">Page 4</a>
+        </div>
+        </li>
+        <li class="nav-item"><a href="/news" class="nav-link">Noticias</a></li>
+        <li class="nav-item"><a href="/info" class="nav-link">Sobre los animales</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link">Acerca de</a></li>
+        </ul>
+        </div>
+        </div>
+        </nav>
 
-         <h2>Animal Extinction</h2>
+  <div class="container p-4">
+
+      <div id="fondoimagen1">
+        <div class="container center-h center-v" 
+        <p style="color:#ffffff" ; <h1>Descubre el dolor de las especies</h1>
+
+        <font face="Comic Sans MS,Arial,Verdana">
+            <p>
+            <font size="7">
+
+              <h2>Animal Extinction</h2>
+              </font>
         </font>
-   </font>
-   </p>
+        </p>
 
-    <a class="btn btn-primary" href="info" role="button">Aprender más...</a>
+          <a class="btn btn-primary" href="info" role="button">Aprender más...</a>
+        </div>
   </div>
-</div>
 
-  {% endblock %}
+</body>
+
+</html>
